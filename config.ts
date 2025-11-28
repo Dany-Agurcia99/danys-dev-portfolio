@@ -47,6 +47,66 @@ export const siteConfig = {
       name: "Expo",
       icon: "/icons/expo.svg",
     },
+    {
+      name: "Framer Motion",
+      icon: "/icons/framer-motion.png",
+    },
+    {
+      name: "Shadcn/ui",
+      icon: "/icons/shadcn-ui.png",
+    },
+    {
+      name: "Axios",
+      icon: "/icons/axios.png",
+    },
+    {
+      name: "React Query",
+      icon: "/icons/rquery.png",
+    },
+    {
+      name: "Radix UI",
+      icon: "/icons/radix.png",
+    },
+    {
+      name: "Postman",
+      icon: "/icons/postman.png",
+    },
+    {
+      name: "Pega",
+      icon: "/icons/pega.png",
+    },
+    {
+      name: "PostgreSQL",
+      icon: "/icons/postgre.png",
+    },
+    {
+      name: "MySQL",
+      icon: "/icons/mysql.png",
+    },
+    {
+      name: "Firestore",
+      icon: "/icons/firestore.svg",
+    },
+    {
+      name: "SQLite",
+      icon: "/icons/sqlite.svg",
+    },
+    {
+      name: "Vercel",
+      icon: "/icons/vercel.png",
+    },
+    {
+      name: "Git",
+      icon: "/icons/git.png",
+    },
+    {
+      name: "Figma",
+      icon: "/icons/figma.png",
+    },
+    {
+      name: "Jest",
+      icon: "/icons/jest.png",
+    },
   ],
   projects: [
     {

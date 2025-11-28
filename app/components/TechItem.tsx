@@ -33,7 +33,7 @@ export default function TechItem({ name, icon }: Props) {
       <img
         src={icon}
         alt={name}
-        className="w-16 h-16 object-contain transition-all duration-200"
+        className="w-16 h-16 object-contain transition-all duration-200 rounded-xl"
         style={{
           filter: isHovered && isDark ? "drop-shadow(0 0 15px rgba(255, 255, 255, 0.8))" : "none",
           transform: isHovered && !isDark ? "scale(1.1)" : "scale(1)",
