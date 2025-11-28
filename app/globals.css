@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 🌤 Light mode (default) */
+@theme {
+  /* Backgrounds */
+  --color-bgColor: #fffdf6;
+  --color-accent: #faf6e9;
+
+  /* Primary */
+  --color-primary: #92c7cf;
+  --color-primary-accent: #088395;
+
+  /* Text */
+  --color-textColor: #44444E;
+  --color-text-light: #333446;
+
+  /* Radius */
+  --radius-card: 1rem;
+  --radius-full: 9999px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* 🌙 Dark mode overrides */
+.dark {
+  /* Backgrounds */
+  --color-bgColor: #272727;
+  --color-accent: #2e2e2e;
+
+  /* Primary */
+  --color-primary: #493d9e;
+  --color-primary-accent: #b2a5ff;
+
+  /* Text */
+  --color-textColor: #ededed;
+  --color-text-light: #cfcfcf;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.header {
+  font-family: var(--font-clash);
+  @apply text-4xl font-bold tracking-tight text-textColor;
 }
 
+.paragraph {
+  @apply text-xl leading-relaxed text-text-light text-justify;
+}
+
+.details {
+  @apply text-lg leading-relaxed font-light text-primary-accent;
+}
+
+/* Global styles */
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bgColor);
+  font-family: var(--font-inter), sans-serif;
+  color: var(--color-textColor);
+  transition: background 0.2s ease, color 0.2s ease;
+  scroll-behavior: smooth;
+}
+
+/* Utility classes for theme colors */
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-primary-accent {
+    color: var(--color-primary-accent);
+  }
+  .text-text-light {
+    color: var(--color-text-light);
+  }
+  .hover\:bg-primary:hover {
+    background-color: var(--color-primary);
+  }
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+  .font-inter {
+    font-family: var(--font-inter), sans-serif;
+  }
+  .font-clash {
+    font-family: var(--font-clash), sans-serif;
+  }
 }
