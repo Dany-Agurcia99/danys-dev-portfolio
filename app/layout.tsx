@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Daniel Agurcia - Software Developer",
     description:
       "Explore projects, experience, and skills of Daniel Agurcia, full-stack and mobile developer.",
-    url: "https://danys-dev-portfolio.vercel.app",
+    url: "https://dany-agurcia.vercel.app/",
     siteName: "Daniel Agurcia Portfolio",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Daniel Agurcia - Software Developer",
     description:
       "Check out my portfolio showcasing Next.js, React, and mobile projects.",
-    creator: "@yourTwitterHandle",
+    creator: "@dany_agurcia",
     images: ["/avatar.png"],
   },
 }
